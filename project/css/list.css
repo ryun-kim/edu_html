@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin:0; padding:0;
+    
+  }
+.container{
+    display: grid;
+    grid-template-rows: 200px 1fr 200px;
+    
+}
+.header{
+    background-color: mistyrose;
+    width: 100%;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+}
+
+.dropdown{
+    position : relative;
+    display : inline-block;
+}
+  
+.dropbtn_icon{
+    font-family : 'Material Icons';
+}
+.dropbtn{
+    border : 1px solid rgb(216, 208, 208);
+    border-radius : 4px;
+    background-color: #f8f5f5;
+    font-weight: 400;
+    padding : 10px;
+    margin: 10px;
+    width :100px;
+    cursor:pointer;
+    font-size : 15px;
+}
+.dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    font-weight: 400;
+    background-color: #f9f9f9;
+    min-width : 200px;
+}
+  
+.dropdown-content a{
+    display : block;
+    text-decoration : none;
+    color : rgb(37, 37, 37);
+    font-size: 12px;
+    padding : 12px 20px;
+}
+  
+.dropdown-content a:hover{
+    background-color : #ececec
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.footer{
+    background-color:rosybrown;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
