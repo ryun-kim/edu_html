@@ -1,0 +1,35 @@
+*{ margin:0; padding:0; list-style: none; box-sizing: border-box;}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 100px minmax(240px, auto) 100px;
+}
+
+.container> .header{
+    background-color: forestgreen;
+    
+}
+
+.container> .body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+}
+
+.container> .footer{
+    background-color: indianred;
+}
+
+.body > .util_login > ul{
+    display: grid;
+    
+    box-sizing: border-box;
+}
+
+footer{
+    
+}
