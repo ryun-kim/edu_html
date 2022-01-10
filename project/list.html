@@ -1,92 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>판매리스트</title>
-    <link rel="stylesheet" href="css/list.css">
-    
+    <link rel="stylesheet" href="list.css">
+    <link rel="">
 </head>
 <body>
     <div class="container">
-        <!--고정헤더 넣을곳-->
-        <div class="header">
-            헤더
+        <div class="side_container">
+            <div class="logo">상세 검색</div>
+            <form  class="side_search">
+                <input type="search" id="search" name="search">
+                <div><input type="submit" value="검색"></div>
+                <div><input type="reset" value="초기화"></div>
+            </form>
+            
+                <div class="detail__model">
+                    <div class="item">
+                        <select name="company">
+                            <option value="basic">차종</option>
+                            <option value="suv">suv</option>
+                            <option value="sedan">세단</option>
+                            </select>
+                    </div>
+                    <div>
+                        <select name="company">
+                        <option value="select">제조사</option>
+                        <option value="kia">기아</option>
+                        <option value="hyun">현대</option>
+                        <option value="genesis">제네시스</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="old">
+                            <option value="basic">연식</option>
+                            <option value="00">아반떼</option>
+                            <option value="sonata">소나타</option>
+                        </select>
+                    </div>
+                    <div>                        
+                        <select name="company">
+                            <option value="basic">주행거리</option>
+                            <option value="kia">기아</option>
+                            <option value="hyun">현대</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="company">
+                            <option value="basic">가격</option>
+                            <option value="kia">기아</option>
+                            <option value="hyun">현대</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="company">
+                            <option value="basic">지역</option>
+                            <option value="seoul">서울</option>
+                            <option value="gyunggi">경기도</option>
+                            <option value="busan">부산</option>
+                            <option value="daegu">대구</option>
+                        </select>
+                    </div>
+                </div>
         </div>
-        <!--메인-->
-        <div class="content">
-            <div class="l_SideMenu">
-                <div class="logo"><!--로고-->
-                    로고
-                </div>
-                <!--검색창-->
-                <div class="search_Area"> 
-                    <input type="search" value="검색">
-                    <input type="button" value="검색하기"><br/>
-                    <input type="reset" value="초기화">
-                </div>
-                <!--상세검색-->
-                <div class="detail_Search"> 
-                    <div class="dropdown">
-                        <button class="dropbtn">                         
-                          제조사
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">현대</a>
-                          <a href="#">기아</a>
-                          <a href="#">르노</a>
-                        </div>
-                    </div><br/>
-                    <div class="dropdown">
-                        <button class="dropbtn">                         
-                            차종
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">아반떼</a>
-                            <a href="#">소나타</a>
-                            <a href="#">모하비</a>
-                        </div>
-                    </div>
-                    <div>
-                        주행거리
-                    </div>
-                    <div>
-                        가격
-                    </div>
-                    <div>
-                        지역
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <div><!--내가 검색한 단어-->
-                    현대 아반떼
-                </div>
-                <div><!--정렬 방법-->        
-                    <a href="#">신뢰도순</a><bh/>
-                    <a href="#">찜목록순</a><bh/>
-                    <a href="#">등록일순</a><bh/>
-                    <a href="#">낮은가격순</a><bh/>
-                    <a href="#">높은가격순</a><bh/>
-                </div>
-                <div><!--검색결과 리스트로 배열-->
-                    리스트
-                </div>
-            </div>
-            <div class="r_SideMenu">
-                <div>
-                    공지사항
-                </div>
-                <div>
-                    Q&A
-                </div>
-            </div>
-        </div>
-        <!--고정푸터 위치-->
-        <div class="footer">
-            푸터
+        <div class="body">
+            바디 부분
         </div>
     </div>
+
 </body>
 </html>
